@@ -188,6 +188,14 @@ a{text-decoration:none;color:inherit}
 }
 .hero-card-name strong{display:block;font-size:.85rem;color:var(--text);font-weight:600}
 .hero-card-name span{font-size:.75rem;color:var(--text3)}
+.hero-float-badge{
+  position:absolute;bottom:-20px;left:-20px;z-index:3;
+  background:var(--gold);border-radius:var(--r);
+  padding:1rem 1.3rem;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:2px;
+}
+.hero-float-badge .num{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--g900);line-height:1}
+.hero-float-badge .lbl{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g800)}
 .hero-scroll{
   position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
   z-index:2;display:flex;flex-direction:column;align-items:center;gap:.5rem;
@@ -226,6 +234,7 @@ section{padding:6rem 5%}
   font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
   color:var(--g600);margin-bottom:1.2rem;
 }
+.section-tag::before{content:'';display:block;width:24px;height:1.5px;background:var(--gold)}
 .h2{
   font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.2rem);
   font-weight:600;color:var(--g800);line-height:1.15;
@@ -453,6 +462,7 @@ section{padding:6rem 5%}
 .story-p{font-size:1.12rem;color:var(--text2);line-height:2;margin-bottom:2rem;font-weight:300}
 .story-p:first-child{font-size:1.22rem;color:var(--text);font-weight:400}
 .story-chapter{font-family:var(--serif);font-size:1.9rem;font-weight:600;color:var(--g800);margin:3.5rem 0 1rem}
+.story-chapter::before{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-bottom:1rem}
 .pullquote{
   background:var(--g50);border-left:4px solid var(--g600);
   border-radius:0 var(--r) var(--r) 0;
