@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started | Bloomcrest Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="wm">Bloomcrest Services</span>
+      <span class="tag">Helping families help their parents</span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/our-story/">Our Story</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/contact/" class="nav-btn active">Get Started</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-hero" style="min-height:44vh">
+  <div class="hero-pattern page-hero-dots"></div>
+  <div class="page-hero-glow"></div>
+  <div class="page-hero-inner">
+    <span class="section-tag" style="color:var(--gold)">Let us Talk About Your Family</span>
+    <h1 style="font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:600;color:var(--white);line-height:1.1;margin:1rem 0 1.2rem;letter-spacing:-.02em">You found what you have been looking for.<br><em style="color:rgba(255,255,255,.5)">Tell us about your parent.</em></h1>
+    <p style="font-size:1rem;color:rgba(255,255,255,.65);line-height:1.85;max-width:560px;font-weight:300">We read every submission personally. This is not a sales funnel. It is the beginning of a real conversation about whether Bloomcrest is the right fit for your family.</p>
+  </div>
+</div>
+
+<div class="contact-layout">
+  <div class="contact-sidebar reveal">
+    <h2 class="contact-sidebar h2" style="font-size:1.8rem">Why we ask you to tell us your story first.</h2>    <p class="contact-sidebar p">We are a small, intentional company. We do not take every client who reaches out. We look for families whose situation genuinely matches what we do well, and we take time with every conversation before making any commitment.</p>
+    <p class="contact-sidebar p" style="margin-top:-.5rem">The more you share about your parent, the better we can help. There are no wrong answers here.</p>
+
+    <div class="c-detail">
+      <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div class="c-detail-text"><strong>Currently Serving</strong><span>Montgomery County, PA and Cypress, TX</span></div>
+    </div>
+    <div class="c-detail">
+      <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="c-detail-text"><strong>Response Time</strong><span>Every inquiry answered within one business day</span></div>
+    </div>
+    <div class="c-detail">
+      <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.09 6.09l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+      <div class="c-detail-text"><strong>Prefer to Call?</strong><span>Leave your number and we will call you back directly</span></div>
+    </div>
+    <div class="c-detail">
+      <div class="c-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div class="c-detail-text"><strong>Email</strong><span>hello@bloomcrestservices.com</span></div>
+    </div>
+
+    <div class="c-promise">
+      <p><strong>Our promise to you:</strong> No hard sell. No pressure. If we are not the right fit for your family we will tell you honestly and do our best to point you toward something that is. This conversation belongs to you.</p>
+    </div>
+  </div>
+
+  <div class="form-card reveal reveal-delay-1">
+    <div id="formWrap">
+      <div class="form-card-head">
+        <span class="form-card-tag">Get Started</span>
+        <div class="form-card-title">Tell us about your family.</div>
+        <p class="form-card-sub">We want to understand your situation before we suggest anything. Help us get to know your parent and what life looks like for them right now.</p>
+      </div>
+
+      <form id="cForm" novalidate>
+        <div class="frow">
+          <div class="fg">
+            <label for="yourName">Your Name *</label>
+            <input type="text" id="yourName" placeholder="Your full name" required>
+          </div>
+          <div class="fg">
+            <label for="phone">Your Phone Number *</label>
+            <input type="tel" id="phone" placeholder="Best number to reach you" required>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fg">
+            <label for="email">Your Email Address *</label>
+            <input type="email" id="email" placeholder="Your email address" required>
+          </div>
+          <div class="fg">
+            <label for="zipcode">Your Parent's ZIP Code *</label>
+            <input type="text" id="zipcode" placeholder="Where they live" maxlength="10" required>
+          </div>
+        </div>
+        <div class="fg">
+          <label for="lovedOneName">Your Parent's First Name *</label>
+          <input type="text" id="lovedOneName" placeholder="Who we would be serving" required>
+        </div>
+        <div class="fg">
+          <label for="message">Tell us about your parent and what they need. *</label>
+          <textarea id="message" placeholder="What does your parent's week look like right now? What have they been struggling with that you wish you could help with? What would it mean to your family to have someone reliable showing up consistently? The more you share, the better we can help." required></textarea>
+        </div>
+
+        <div class="form-error" id="formError">Please fill in all required fields before submitting.</div>
+
+        <button type="submit" id="submitBtn" class="btn btn-green btn-lg" style="width:100%;justify-content:center;margin-top:.5rem">
+          Send Us Your Family's Story
+        </button>
+        <p class="form-note">We respond within one business day. Your information is completely private and will never be shared or sold. Submitting this form is the beginning of a conversation, not a commitment.</p>
+      </form>
+    </div>
+
+    <div class="form-success" id="formSuccess">
+      <div class="success-ring"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <div class="success-title">We received your message.</div>
+      <p class="success-body">Thank you for trusting us with your family's story. Someone from Bloomcrest will be in touch within one business day to start a real conversation about whether we are the right fit for your parent.<br><br>In the meantime you are always welcome to email us directly at hello@bloomcrestservices.com.</p>
+    </div>
+  </div>
+</div>
+
+<div class="reassure-strip">
+  <div class="reassure-grid">
+    <div class="reveal">
+      <div class="r-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+      <div class="r-title">Completely Private</div>
+      <p class="r-body">Your information is never shared, never sold, and never used for anything other than this conversation. Full stop.</p>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="r-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+      <div class="r-title">No Pressure, Ever</div>
+      <p class="r-body">Reaching out does not commit you to anything. If we are not the right fit we will tell you and try to point you somewhere that is.</p>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <div class="r-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+      <div class="r-title">A Real Person Responds</div>
+      <p class="r-body">You will not receive an automated reply or be entered into a sales sequence. A real person reads every message and responds personally.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="wm">Bloomcrest Services</div>
+        <span class="tag">Helping families help their parents</span>
+        <p>Non-medical homemaker services for older adults who want to stay independent, stay home, and stay themselves.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/our-story/">Our Story</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/contact/">Get Started</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Reach Us</div>
+        <ul class="footer-links">
+          <li><a href="/contact/">Start a Conversation</a></li>
+          <li><a href="tel:+1">Call Us Directly</a></li>
+          <li><a href="mailto:hello@bloomcrestservices.com">hello@bloomcrestservices.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Bloomcrest Services. All rights reserved.</span>
+      <span class="footer-love">A love letter to our mothers.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() { document.getElementById('navMenu').classList.toggle('open'); }
+
+document.getElementById('cForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const err = document.getElementById('formError');
+  err.style.display = 'none';
+  const btn = document.getElementById('submitBtn');
+
+  const fields = {
+    your_name:      document.getElementById('yourName').value.trim(),
+    phone:          document.getElementById('phone').value.trim(),
+    email:          document.getElementById('email').value.trim(),
+    zipcode:        document.getElementById('zipcode').value.trim(),
+    loved_one_name: document.getElementById('lovedOneName').value.trim(),
+    message:        document.getElementById('message').value.trim(),
+    submitted_at:   new Date().toISOString(),
+    source:         'Bloomcrest Services Website'
+  };
+
+  for (const [k,v] of Object.entries(fields)) {
+    if (!v && !['submitted_at','source'].includes(k)) {
+      err.textContent = 'Please fill in all required fields before submitting.';
+      err.style.display = 'block';
+      return;
+    }
+  }
+
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch('https://hook.us1.make.com/p4euqqjtyu8m1pu5yn3ni5iyjtqdu1ys', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(fields)
+    });
+    if (res.ok) {
+      document.getElementById('formWrap').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    } else { throw new Error(res.status); }
+  } catch(ex) {
+    err.textContent = 'Something went wrong. Please try again or email us at hello@bloomcrestservices.com';
+    err.style.display = 'block';
+    btn.textContent = "Send Us Your Family's Story";
+    btn.disabled = false;
+  }
+});
+
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.1 });
+reveals.forEach(r => observer.observe(r));
+</script>
+</body>
+</html>
